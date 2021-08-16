@@ -16,7 +16,7 @@ export default [
                 file: packageJson.main,
                 format: 'cjs',
                 sourcemap: true,
-                name: 'comp-lib'
+                name: 'react-ts-lib'
             },
             {
                 file: packageJson.module,
@@ -31,7 +31,7 @@ export default [
             typescript({ tsconfig: './tsconfig.json' }),
             postcss(),
             terser()
-        ]
+        ],
     },
     {
         input: 'dist/esm/types/index.d.ts',
